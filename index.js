@@ -1,47 +1,47 @@
-const PORT = 3000;
-
 const express = require('express');
 
+PORT = 3000;
+
+const bodeParser = require('body-parser');
 const bodyParser = require('body-parser');
-
-
-
-let posts = [
-
-    { id: "jsjdjs", title: "teste", description: "Descricao" }
-
-]
+const req = require('express/lib/request');
 
 const app = express();
 
+let posts = [
 
-app.get("/all", (req, res) => {
+    {
+        id: "skasmdskas",
+        title: "kmskmas",
+        description: "nskasnas"
+    },
+
+
+]
+
+
+app.get('/all', (req, res) => {
 
     res.json(JSON.stringify(posts))
 
 });
 
 
-
 app.post("/new", bodyParser.json(), (req, res) => {
 
-    let id = generateID();
+    let id = generateID()
     let title = req.body.title;
     let description = req.body.description;
 
-    post.push({ id, title, description });
+    posts.push({ id, title, description });
 
-    res.send("Post adicionado");
+    res.send('Posts adicionados')
 
 })
 
-
-
-
 app.listen(PORT, () => {
 
-    console.log("Server running on", PORT)
-
+    console.log('Server running on', PORT);
 
 })
 

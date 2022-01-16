@@ -2,9 +2,9 @@ const express = require('express');
 
 PORT = 3000;
 
-const bodeParser = require('body-parser');
+
 const bodyParser = require('body-parser');
-const req = require('express/lib/request');
+;
 
 const Posts = require('./model/posts');
 const posts = require('./model/posts');

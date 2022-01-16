@@ -6,7 +6,6 @@ PORT = 3000;
 const bodyParser = require('body-parser');
 ;
 
-const Posts = require('./model/posts');
 const posts = require('./model/posts');
 
 const app = express();

@@ -21,7 +21,7 @@ app.get('/all', (req, res) => {
 
 app.post("/new", bodyParser.json(), (req, res) => {
 
-    let id = generateID()
+
     let title = req.body.title;
     let description = req.body.description;
 

@@ -6,9 +6,9 @@ module.exports = {
     posts: [
 
         {
-            id: "skasmdskas",
-            title: "kmskmas",
-            description: "nskasnas"
+            id: "esse é o ID",
+            title: "Esse é o TITULO",
+            description: "Essa é a DESCRIÇÃO"
         },
 
 

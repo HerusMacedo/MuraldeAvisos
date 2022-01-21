@@ -1,3 +1,6 @@
+const express = require('express');
+const app = express();
+
 module.exports = {
 
     posts: [
@@ -17,7 +20,7 @@ module.exports = {
 
     },
 
-    newPost(title,description){
+    newPost(title, description) {
 
         this.posts.push({ id: generateID(), title, description });
 
@@ -25,6 +28,7 @@ module.exports = {
     },
 
 }
+
 
 function generateID() {
 

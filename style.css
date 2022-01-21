@@ -1,0 +1,49 @@
+*{
+
+
+margin: 0;
+padding: 0;
+
+}
+
+.conteudo{
+
+height: 60vh;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+background-color: brown;
+padding: 60px;
+color: white;
+
+}
+
+h1,h3{
+
+text-align: center;
+margin-bottom: 10px;
+margin-top: 5px;
+
+}
+
+input{
+
+margin-top: 5px;
+padding: 10px;
+text-align: center;
+margin-bottom: 20px;
+
+}
+
+button{
+
+
+   
+display: block;
+margin: auto;
+padding: 10px;
+width: 100%;
+cursor: pointer;
+
+}

@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     updatePosts();
+   
 
 })
 
@@ -24,11 +25,11 @@ function updatePosts() {
 
 <div>
 
-    <h5>${post.title}</h5>
+    <h5 style="margin-top:10px;">${post.title}</h5>
 
 </div>
 
-<div>${post.description}</div>
+<div style="margin-top:10px;">${post.description}</div>
 
 </div>
 `

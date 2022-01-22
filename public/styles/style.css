@@ -1,0 +1,47 @@
+*{
+
+margin: 0;
+padding: 0;
+
+}
+
+.container{
+
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+height: 500px;
+width: 300px;
+background-color: brown;
+text-align: center;
+padding: 10px;
+border-radius: 10px;
+
+}
+
+input{
+
+padding: 10px;
+margin: 5px;
+
+}
+
+button{
+
+display: block;
+margin: auto;
+width: 65%;
+border-radius: 10px;
+padding: 5px;
+cursor: pointer;
+margin-top: 10px;
+margin-bottom: 10px;
+
+}
+
+input[title]{
+
+margin-top: 10px;
+
+}

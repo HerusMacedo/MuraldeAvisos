@@ -1,28 +1,26 @@
+document.addEventListener('DOMContentLoaded', () => {
 
-
-document.addEventListener('DOMContentLoaded', ()=>{
-
-updatePosts();
+    updatePosts();
 
 })
 
 function updatePosts() {
 
 
-fetch("http://localhost:3000/api/all").then(res=>{
+    fetch("http://localhost:3000/api/all").then(res => {
 
-return res.json();
+        return res.json();
 
-}).then(json =>{
+    }).then(json => {
 
 
 
-let postElements = '';
+        let postElements = '';
 
-let posts = JSON.parse(json);
-posts.forEach((post)=>{
+        let posts = JSON.parse(json);
+        posts.forEach((post) => {
 
-let postElement = `  <div id=${post.id}>
+            let postElement = `  <div id=${post.id}>
 
 <div>
 
@@ -35,14 +33,34 @@ let postElement = `  <div id=${post.id}>
 </div>
 `
 
-postElements += postElement;
+            postElements += postElement;
 
-})
+        })
 
-document.getElementById("posts").innerHTML = postElements;
+        document.getElementById("posts").innerHTML = postElements;
 
-})
+    })
 
 
+
+}
+
+function newPost() {
+
+    let title = document.getElementById("title").value;
+    let description = document.getElementById("desc").value;
+
+    let post = { title, description }
+
+    const options = {
+        method: "POST", headers: new Headers({ 'content-type': 'application/json' }),
+        body: JSON.stringify(post)
+    }
+
+    fetch("http://localhost:3000/api/new", options).then(res => {
+
+        console.log(res)
+
+    })
 
 }

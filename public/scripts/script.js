@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     updatePosts();
-   
+
 
 })
 
@@ -23,13 +23,17 @@ function updatePosts() {
 
             let postElement = `  <div id=${post.id}>
 
+       
+
 <div>
 
-    <h5 style="margin-top:10px;">${post.title}</h5>
+    <h5 style="margin-top:10px; font-size:20px;">${post.title}</h5>
 
 </div>
 
 <div style="margin-top:10px;">${post.description}</div>
+
+
 
 </div>
 `
@@ -61,6 +65,10 @@ function newPost() {
     fetch("http://localhost:3000/api/new", options).then(res => {
 
         console.log(res)
+
+        updatePosts();
+        let title = document.getElementById("").value;
+        let description = document.getElementById("").value;
 
     })
 

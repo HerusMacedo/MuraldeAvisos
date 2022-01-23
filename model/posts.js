@@ -7,8 +7,8 @@ module.exports = {
 
         {
             id: "esse é o ID",
-            title: "Esse é o TITULO",
-            description: "Essa é a DESCRIÇÃO"
+            title: "",
+            description: ""
         },
 
 
